@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website </title>
+    <link rel="stylesheet" href="Portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Portfolio.hu_full_logo.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header"><b><i>Home</i></b></a></li>
+            <li><a href="#about"><b><i>About</i></b></a></li>
+            <li><a href="#services"><b><i>Services</i></b></a></li>
+            <li><a href="#portfolio"><b><i>Portfolio</i></b></a></li>
+            <li><a href="#contact"><b><i>Contact</i></b></a></li>
+            <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+        <p><b><h3>UI/UX Designer</h3></b></p>
+        <h2>Hi, I'm <span>Deepika</span> from India</h2>
+    </div>
+    </div>
+   </div>
+   <!--------------about------------->
+   <div id="about">
+    <div class="container">
+       <div class="row">
+        <div class="about-col-1">
+            <img src="https://img.pikbest.com/origin/10/51/48/62YpIkbEsTJnk.jpg!w700wp" alt="">
+        </div>
+        <div class="about-col-2">
+            <h1 class="sub-title"><i><b>About me:</b></i></h1>
+            <p class="para">Jane Doe is an accomplished software engineer known for her
+                innovative problem-solving skills and dedication to excellence. 
+                With a background in computer science from MIT, she has developed
+                a strong expertise in artificial intelligence and machine learning. 
+                Outside of work, Jane is passionate about volunteering at local STEM 
+                education. Programs,showcasing her commitment to inspiring the next 
+                generation tech enthusiasts and making a positive impact in her community.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab(event,'skills')"><b>Skills:</b></p>
+                    <p class="tab-links" onclick="opentab(event,'experience')"><b>Experience:</b></p>
+                    <p class="tab-links" onclick="opentab(event,'eduaction')"><b>Education:</b></p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces.</li>
+                        <li><span>Wed Development</span><br>Web app Development.</li>
+                        <li><span>App Development</span><br>Building Android/ios Apps.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021-Current</span><br>UI/UX Design Training at ET institute.</li>
+                        <li><span>2019-2021</span><br>Team lead at StartApp LLC.</li>
+                        <li><span>2019-2018</span><br>Internship at Ekart E-Commerce.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="eduaction">
+                    <ul>
+                        <li><span>2016</span><br>UI/UX Design Training at ET institute.</li>
+                        <li><span>2016</span><br>MBA from MIT Banglore.</li>
+                        <li><span>2014</span><br>BBA from ISM Banglore.</li>
+                    </ul>
+                </div>
+        </div>
+       </div> 
+    </div>
+   </div>
+   <!--------------services------------->
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title"><i><b>My Services:</b></i></h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Our web design services are dedicated to creating visually stunning and 
+                    highly functional websites.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>Our web design services are dedicated to creating visually stunning and 
+                    highly functional websites.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Our web design services are dedicated to creating visually stunning and 
+                    highly functional websites.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+   </div>
+   <!-----------------------Portfolio------------------------>
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"><i><b>My Work:</b></i></h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="https://images.unsplash.com/photo-1596558450255-7c0b7be9d56a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you the talented people around the world.
+                        Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="https://images.unsplash.com/photo-1531986362435-16b427eb9c26?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you the talented people around the world.
+                        Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="https://images.unsplash.com/photo-1514417034809-c7b296354f07?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <div class="layer">
+                    <h3>Online shopping App</h3>
+                    <p>The app connects you the talented people around the world.
+                        Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">Know more</a>
+    </div>
+   </div>
+   <!-----------------------Contact-------------------->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"><i><b>Contact Me:</b></i></h1>
+                <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>0123456789</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://twitter.com"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>    
+                </div>
+                <a href="https://image.slidesharecdn.com/4f241452-17b0-4aec-bcde-a2bff1528c69-150929113050-lva1-app6892/85/CV_DEEPIKA-2-638.jpg" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet" action="Connect.php" method="post">
+            <input type="text" name="Name" placeholder="Your Name" required> 
+            <input type="email" name="Email" placeholder="Your Email" required>  
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+      <div class="copyright">
+        <p>Copyright &copy; kevin. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+      </div>
+   </div>
+
+   <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(event,tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+   </script>
+   <script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.left="0";
+    }
+    function closemenu(){
+        sidemeu.style.left="-200px";
+    }
+   </script>
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzspfjBp9cq7LAtpKjoKnVq-pARKT5oeQDOqHsuPcdll1kFSVOZ9E4SK2VRfmYR47Rcqg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => 
+        {
+            console.log('Success:', response);
+            msg.innerHTML = "Submitted Successfully";
+            setTimeout(function() { msg.innerHTML = "" }, 2000);
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message));
+    })
+  </script>
+</body>
+</html>
